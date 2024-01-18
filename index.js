@@ -4,17 +4,6 @@ const b4a = require('b4a')
 
 const utf8 = string('utf-8') // c.raw.string
 
-function autoId (db, sub) {
-  return beeTransaction(db, async function (batch) {
-    const current = await batch.get('/id' + sub)
-    const id = (current?.value || 0) + 1
-
-    await batch.put('/id' + sub, id)
-
-    return id
-  })
-}
-
 function putWithId (db, sub, callback) {
   return beeTransaction(db, async function (batch) {
     const id = await nextId(batch, sub)
@@ -99,6 +88,5 @@ function string (encoding) {
 module.exports = {
   idEncoding,
   nextId,
-  putWithId,
-  autoId
+  putWithId
 }
