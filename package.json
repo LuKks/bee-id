@@ -1,0 +1,31 @@
+{
+  "name": "bee-id",
+  "version": "0.0.0",
+  "description": "Incremental ID for Hyperbee",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && brittle test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LuKks/bee-id.git"
+  },
+  "author": "Lucas Barrena (LuKks)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LuKks/bee-id/issues"
+  },
+  "homepage": "https://github.com/LuKks/bee-id#readme",
+  "devDependencies": {
+    "brittle": "^3.3.2",
+    "hyperbee": "^2.18.1",
+    "hypercore": "^10.31.12",
+    "random-access-memory": "^6.2.0",
+    "standard": "^17.1.0"
+  },
+  "dependencies": {
+    "b4a": "^1.6.4",
+    "bee-transaction": "^1.0.0",
+    "lexicographic-integer": "^1.1.0"
+  }
+}
