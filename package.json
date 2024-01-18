@@ -1,6 +1,6 @@
 {
   "name": "bee-id",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Incremental ID for Hyperbee",
   "main": "index.js",
   "scripts": {
